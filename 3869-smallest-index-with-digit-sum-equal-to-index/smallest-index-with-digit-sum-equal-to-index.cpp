@@ -10,13 +10,16 @@ public:
         return a;
     }
     int smallestIndex(vector<int>& nums) {
-        int sm=INT_MAX;
+        // int sm=INT_MAX;
         for(int i=0;i<nums.size();i++){
             int z=sum(nums[i]);
             if(i==z){
-                sm=min(sm,z);
+                // sm=min(sm,z);
+                return z;
             }
+
         }
-        return (sm==INT_MAX)?-1 :sm;
+        // return (sm==INT_MAX)?-1 :sm;
+        return -1;
     }
 };
