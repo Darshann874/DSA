@@ -28,10 +28,11 @@ public:
 
 
         }
-        while(!st.empty()){
-            step+=2;
-            st.pop();
-        }
+        // while(!st.empty()){
+        //     step+=2;
+        //     st.pop();
+        // }
+        step+=2*st.size();
         return step;
     }
 };
