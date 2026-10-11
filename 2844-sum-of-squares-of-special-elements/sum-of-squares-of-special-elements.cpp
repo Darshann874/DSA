@@ -1,7 +1,7 @@
 class Solution {
 public:
     int sumOfSquares(vector<int>& nums) {
-        long long ans=0 ;
+        int ans=0 ;
         int n=nums.size();
         int i=1;
         for(auto a:nums){
