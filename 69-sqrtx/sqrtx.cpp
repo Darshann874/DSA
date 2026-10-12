@@ -1,7 +1,7 @@
 class Solution {
 public:
     int find(int num,int l,int h){
-        int ans;
+        
         while(l<=h){
             int m =l+(h-l)/2;
             long long  a= 1LL*m*m ;
@@ -9,7 +9,7 @@ public:
                 return m;
             }
             else if(a<num){
-                ans=m;
+               
                 l=m+1;
             }
             else{
@@ -17,7 +17,7 @@ public:
             }
 
         }
-        return ans;
+        return l-1;
     }
     int mySqrt(int x) {
         int a;
